@@ -31,7 +31,7 @@ JavaScript – Logic, interactivity, and data persistence
 🚀 Live Demo
 
 👉 Demo Link:
-https://jayant20077.github.io/bmi-and-health-calculator/
+https://jayant20077.github.io/BMI-AND-HEALTH-CALCULATOR/
 
 📁 Project Structure
 bmi-health-calculator/
