@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BMI & Health Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h1>BMI & Health Calculator</h1>
+    <p>Track your health, BMI history & insights beautifully</p>
+    <button id="startBtn">Start Calculating</button>
+    <button id="darkToggle">🌙 Toggle Dark Mode</button>
+  </section>
+
+  <!-- CALCULATOR -->
+  <section class="calculator hidden" id="calculator">
+    <div class="card">
+      <h2>BMI Calculator</h2>
+
+      <div class="input-group">
+        <label>Height (cm)</label>
+        <input type="number" id="height" placeholder="e.g. 170">
+      </div>
+
+      <div class="input-group">
+        <label>Weight (kg)</label>
+        <input type="number" id="weight" placeholder="e.g. 65">
+      </div>
+
+      <button id="calcBtn">Calculate BMI</button>
+
+      <div class="result">
+        <p id="bmiResult">Your BMI: —</p>
+        <p id="status">Health Status: —</p>
+        <p id="message"></p>
+      </div>
+
+      <hr>
+
+      <h3>BMI History</h3>
+      <ul id="historyList"></ul>
+      <button id="clearHistory">Clear History</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

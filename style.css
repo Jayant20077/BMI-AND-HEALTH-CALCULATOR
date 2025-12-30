@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  color: white;
+  transition: background 0.4s, color 0.4s;
+}
+
+/* DARK MODE */
+body.dark {
+  background: linear-gradient(135deg, #000428, #004e92);
+  color: #e5e7eb;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  margin-bottom: 25px;
+}
+
+.hero button {
+  padding: 14px 36px;
+  margin: 8px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: #6366f1;
+  color: white;
+  font-size: 1rem;
+  box-shadow: 0 10px 30px rgba(99,102,241,0.6);
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  transform: scale(1.06);
+}
+
+.calculator {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  background: white;
+  color: black;
+  padding: 35px;
+  width: 380px;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+  animation: slideUp 0.8s ease;
+}
+
+body.dark .card {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.card button {
+  width: 100%;
+  padding: 12px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.result {
+  text-align: center;
+  margin-top: 15px;
+}
+
+ul {
+  margin-top: 10px;
+  list-style: none;
+}
+
+ul li {
+  background: rgba(99,102,241,0.15);
+  padding: 8px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+#clearHistory {
+  background: crimson;
+  margin-top: 10px;
+}
